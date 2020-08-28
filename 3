@@ -1,0 +1,37 @@
+ 
+#Print the prime numbers up to a specified limit.
+b=int(input("enter a number"))
+for num in range(b+1): #add +1 to the entered number in for loop because if we dont add plus one then you wont get last prime number if you entered limit is upto a prime number
+    if num > 1:
+       for i in range(2, num):
+           if (num % i) == 0:   #if it satisified then it breaks and dont go for next line upto another iteration
+               break
+       else:
+           print(num)
+           
+           
+           output:
+           runfile('C:/Users/Administrator/.spyder-py3/untitled8.py', wdir='C:/Users/Administrator/.spyder-py3')
+
+enter a number75
+2
+3
+5
+7
+11
+13
+17
+19
+23
+29
+31
+37
+41
+43
+47
+53
+59
+61
+67
+71
+73
